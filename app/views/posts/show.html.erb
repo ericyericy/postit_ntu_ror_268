@@ -1,6 +1,12 @@
 <!-- <h1>Show Page</h1>
 <hr> -->
 <%= render 'shared/title', title: "Show Page"%>
-<p><%= @post.content %></p>
+<div class "row">
+	<div class="col-md-8 well">
+	  <p>
+	    <%= @post.content%>
+	  </p>
+		<%= link_to "back to list page", posts_path %>
+	</div>
+</div>
 
-<%= link_to "back to list page", posts_path %>
